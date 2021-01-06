@@ -1,5 +1,5 @@
-const {LinkedList}  = require("./index");
-const linkedList = new LinkedList();
+const {LinkedList,DoubleLinkedList,CircularLinkedList,CircularDoubleLinkedList}  = require("./index");
+const linkedList = new CircularDoubleLinkedList();
 
 console.log("push", linkedList.push("1"))
 console.log("push", linkedList.push("2"))
@@ -17,6 +17,7 @@ console.log("toString", linkedList.toString());
 console.log("indexOf 9", linkedList.indexOf("9"));
 console.log("indexOf 4", linkedList.indexOf("4"));
 console.log("indexOf 8", linkedList.indexOf("8"));
+console.log("toString", linkedList.toString());
 console.log("getElementAt 4", linkedList.getElementAt(4));
 console.log("removeAt 7", linkedList.removeAt(7));
 console.log("toString", linkedList.toString());
